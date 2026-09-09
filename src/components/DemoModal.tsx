@@ -75,13 +75,16 @@ export const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
     >
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-black/75 backdrop-blur-sm transition-opacity animate-fade-in"
+        className="fixed inset-0 bg-black/80 backdrop-blur-md transition-opacity animate-fade-in"
         onClick={handleResetAndClose}
       />
 
-      {/* Modal Card */}
-      <div className="relative w-full max-w-lg rounded-3xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6 sm:p-8 shadow-2xl z-10 animate-fade-in text-zinc-900 dark:text-white">
+      {/* Modal Card with pop-in spring animation */}
+      <div className="relative w-full max-w-lg rounded-3xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6 sm:p-8 shadow-2xl z-10 animate-modal-pop text-zinc-900 dark:text-white">
         
+        {/* Top subtle highlight line */}
+        <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-red-500/70 to-transparent rounded-t-3xl" />
+
         {/* Close Button */}
         <button
           onClick={handleResetAndClose}
@@ -204,7 +207,7 @@ export const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full py-3.5 px-4 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 shadow-lg shadow-red-500/25 flex items-center justify-center space-x-2 transition-all disabled:opacity-50"
+                  className="btn-shimmer w-full py-3.5 px-4 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 shadow-lg shadow-red-500/25 flex items-center justify-center space-x-2 transition-all disabled:opacity-50"
                 >
                   {isLoading ? (
                     <>

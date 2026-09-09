@@ -53,12 +53,16 @@ export const HowItWorks: React.FC = () => {
 
         {/* 4-Step Grid with progressive connector */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+          
+          {/* Subtle connecting beam between steps on desktop */}
+          <div className="hidden lg:block absolute top-[48px] left-[15%] right-[15%] h-[2px] bg-gradient-to-r from-red-500/20 via-rose-500/40 to-red-500/20 pointer-events-none" />
+
           {steps.map((step) => {
             const Icon = step.icon;
             return (
               <div
                 key={step.number}
-                className="group relative p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:border-red-500/40 dark:hover:border-red-500/50 hover:shadow-glow-sm transition-all duration-300 flex flex-col justify-between"
+                className="group relative p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:border-red-500/40 dark:hover:border-red-500/50 hover:shadow-lg hover:shadow-red-500/10 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between z-10"
               >
                 <div>
                   {/* Step Number & Icon */}

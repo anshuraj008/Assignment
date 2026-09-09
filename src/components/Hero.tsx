@@ -42,10 +42,32 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemoModal }) => {
       <div className="absolute inset-0 bg-dots-pattern -z-10 pointer-events-none" />
 
       {/* Top glowing laser beam line */}
-      <div className="absolute top-16 left-1/2 -translate-x-1/2 w-3/4 max-w-4xl beam-line pointer-events-none" />
+      <div className="absolute top-16 left-1/2 -translate-x-1/2 w-3/4 max-w-4xl beam-line animate-beam-scan pointer-events-none" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
         
+        {/* Floating Decorative Micro-Badge Left (Desktop) */}
+        <div className="hidden lg:flex items-center space-x-2.5 p-3 pr-4 rounded-2xl liquid-glass shadow-lg border border-red-500/20 absolute -left-8 xl:-left-16 top-12 animate-float-slow pointer-events-none">
+          <div className="w-8 h-8 rounded-xl bg-red-500/15 text-red-500 flex items-center justify-center font-bold text-xs shadow-inner">
+            ⚡
+          </div>
+          <div className="text-left text-xs">
+            <div className="font-bold text-zinc-900 dark:text-white">4.2x Velocity</div>
+            <div className="text-[10px] text-zinc-500">Autonomous Sprints</div>
+          </div>
+        </div>
+
+        {/* Floating Decorative Micro-Badge Right (Desktop) */}
+        <div className="hidden lg:flex items-center space-x-2.5 p-3 pr-4 rounded-2xl liquid-glass shadow-lg border border-red-500/20 absolute -right-8 xl:-right-16 top-24 animate-float-reverse pointer-events-none">
+          <div className="w-8 h-8 rounded-xl bg-emerald-500/15 text-emerald-500 flex items-center justify-center font-bold text-xs shadow-inner">
+            ✓
+          </div>
+          <div className="text-left text-xs">
+            <div className="font-bold text-zinc-900 dark:text-white">PR #402 Merged</div>
+            <div className="text-[10px] text-zinc-500">Zero Regressions</div>
+          </div>
+        </div>
+
         {/* Floating Liquid-Glass Eyebrow Badge */}
         <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full liquid-glass shadow-sm mb-8 hover:border-red-500/40 transition-colors cursor-default">
           <span className="flex h-2 w-2 relative">
@@ -80,7 +102,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemoModal }) => {
           <a
             href="#pricing"
             onClick={handleScrollToPricing}
-            className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-6 py-3 rounded-xl font-semibold text-sm text-white bg-red-600 hover:bg-red-500 shadow-md shadow-red-600/20 hover:shadow-red-600/35 hover:-translate-y-0.5 active:translate-y-0 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
+            className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-6 py-3 rounded-xl font-semibold text-sm text-white bg-red-600 hover:bg-red-500 shadow-md shadow-red-600/20 hover:shadow-red-600/35 hover:-translate-y-0.5 active:translate-y-0 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 btn-shimmer"
           >
             <span>Start 14-Day Free Trial</span>
             <ArrowRight className="w-4 h-4" />
@@ -140,8 +162,35 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemoModal }) => {
             </button>
           </form>
 
+          {/* Quick Suggestion Chips */}
+          <div className="flex items-center justify-center gap-2 mt-3 flex-wrap">
+            <span className="text-[11px] text-zinc-500 font-medium">Try:</span>
+            {[
+              { label: '/triage-sprint', msg: '✓ AI Agent triaged 14 issues, balanced 2 sprint backlogs, and drafted 1 PR.' },
+              { label: '/balance-workload', msg: '✓ Re-balanced sprint points across 8 engineers. Optimal 88% capacity achieved.' },
+              { label: '/flag-risks', msg: '✓ Flagged Stripe webhook dependency bottleneck. Early warning projected: 4 days.' }
+            ].map((chip) => (
+              <button
+                key={chip.label}
+                type="button"
+                onClick={() => {
+                  setCommandText(chip.label);
+                  setIsExecuting(true);
+                  setCommandResponse(null);
+                  setTimeout(() => {
+                    setIsExecuting(false);
+                    setCommandResponse(chip.msg);
+                  }, 400);
+                }}
+                className="px-2.5 py-1 rounded-lg bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-[11px] font-mono text-zinc-600 dark:text-zinc-400 hover:text-red-600 dark:hover:text-red-400 hover:border-red-500/40 shadow-2xs hover:scale-105 active:scale-95 transition-all"
+              >
+                {chip.label}
+              </button>
+            ))}
+          </div>
+
           {commandResponse && (
-            <div className="mt-2.5 p-2.5 rounded-lg bg-red-500/10 border border-red-500/20 text-xs text-red-300 flex items-center justify-between animate-fade-in">
+            <div className="mt-3 p-3 rounded-xl bg-red-500/10 border border-red-500/20 text-xs text-red-300 flex items-center justify-between animate-fade-in shadow-xs">
               <span>{commandResponse}</span>
               <span className="font-mono text-[10px] text-red-400">42ms</span>
             </div>

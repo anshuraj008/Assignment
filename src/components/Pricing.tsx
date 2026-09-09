@@ -167,7 +167,7 @@ export const Pricing: React.FC<PricingProps> = ({ onOpenDemoModal }) => {
                     onClick={onOpenDemoModal}
                     className={`w-full py-3.5 px-4 rounded-xl font-bold text-sm flex items-center justify-center space-x-2 transition-all duration-200 mb-8 ${
                       plan.popular
-                        ? 'bg-gradient-to-r from-red-600 via-rose-600 to-red-600 hover:from-red-500 hover:to-rose-500 text-white shadow-lg shadow-red-500/30 hover:-translate-y-0.5'
+                        ? 'btn-shimmer bg-gradient-to-r from-red-600 via-rose-600 to-red-600 hover:from-red-500 hover:to-rose-500 text-white shadow-lg shadow-red-500/30 hover:-translate-y-0.5'
                         : 'bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-zinc-900 dark:text-white border border-zinc-200 dark:border-zinc-700 hover:-translate-y-0.5'
                     }`}
                   >

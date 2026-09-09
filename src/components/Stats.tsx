@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { ShieldCheck, Zap, Clock, Users, Sparkles, TrendingUp } from 'lucide-react';
 
 interface StatCounterProps {
   end: number;
@@ -72,51 +73,81 @@ export const Stats: React.FC = () => {
       decimals: 1,
       suffix: '%',
       label: 'Automation Precision',
-      description: 'Zero hallucination rate with verified deterministic code execution.',
+      description: 'Deterministic rule validation with zero hallucination in production environments.',
+      tag: 'Zero-Hallucination',
+      icon: ShieldCheck,
     },
     {
       numeric: 10,
       decimals: 0,
       suffix: 'x',
-      label: 'Faster Issue-to-PR Time',
-      description: 'From customer report to vetted pull request in under 5 minutes.',
+      label: 'Issue-to-PR Velocity',
+      description: 'From raw customer issue to reviewed, tested pull request in under 5 minutes.',
+      tag: 'Under 5 Minutes',
+      icon: Zap,
     },
     {
       numeric: 14,
       decimals: 0,
       suffix: ' hrs',
-      label: 'Weekly Hours Reclaimed',
-      description: 'Average time saved per engineer on administrative syncs and manual triaging.',
+      label: 'Weekly Time Reclaimed',
+      description: 'Eliminates repetitive status meetings, manual Jira triaging, and PR chase-downs.',
+      tag: 'Per Engineer / Wk',
+      icon: Clock,
     },
     {
       numeric: 50,
       decimals: 0,
       suffix: 'k+',
       label: 'Active Workspaces',
-      description: 'Global engineering and product organizations scaling with Nexora.',
+      description: 'Trusted by fast-moving high-growth engineering teams across 68 countries.',
+      tag: 'Global Adoption',
+      icon: Users,
     },
   ];
 
   return (
     <section className="py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-b from-zinc-50 to-zinc-100 dark:from-zinc-900/90 dark:to-zinc-950 border border-zinc-200 dark:border-zinc-800 shadow-xl">
-          
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-zinc-950 dark:text-white mb-3">
-              Proven impact on enterprise development velocity
-            </h2>
-            <p className="text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
-              Measurable ROI validated across thousands of production sprints and cross-functional teams.
-            </p>
+        
+        {/* Section Heading */}
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <div className="inline-flex items-center space-x-1.5 px-3.5 py-1 rounded-full bg-red-500/10 text-red-600 dark:text-red-400 text-xs font-semibold mb-3 border border-red-500/20">
+            <Sparkles className="w-3.5 h-3.5" />
+            <span>MEASURABLE VELOCITY IMPACT</span>
           </div>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-zinc-950 dark:text-white mb-3 tracking-tight">
+            Validated ROI across thousands of production sprints
+          </h2>
+          <p className="text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
+            Real performance benchmarks measured across engineering, product, and DevOps organizations.
+          </p>
+        </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 divide-y sm:divide-y-0 sm:divide-x divide-zinc-200 dark:divide-zinc-800">
-            {stats.map((stat, i) => (
+        {/* 4 Elevated Stat Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {stats.map((stat) => {
+            const Icon = stat.icon;
+            return (
               <div 
                 key={stat.label} 
-                className={`flex flex-col items-center text-center ${i !== 0 ? 'pt-8 sm:pt-0 sm:pl-8' : ''}`}
+                className="card-interactive relative rounded-3xl p-6 sm:p-7 bg-white dark:bg-zinc-900/70 border border-zinc-200 dark:border-zinc-800 hover:border-red-500/40 dark:hover:border-red-500/40 shadow-xl shadow-zinc-950/5 dark:shadow-black/30 backdrop-blur-md overflow-hidden flex flex-col justify-between group"
               >
+                {/* Top Subtle Red Accent Line */}
+                <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-red-500/60 to-transparent group-hover:via-red-500 transition-all duration-300" />
+
+                {/* Card Header: Icon & Micro Tag */}
+                <div className="flex items-center justify-between mb-5">
+                  <div className="w-10 h-10 rounded-xl bg-red-500/10 dark:bg-red-500/15 border border-red-500/20 text-red-600 dark:text-red-400 flex items-center justify-center transition-transform group-hover:scale-105">
+                    <Icon className="w-5 h-5" />
+                  </div>
+                  <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700">
+                    <TrendingUp className="w-3 h-3 mr-1 text-red-500" />
+                    {stat.tag}
+                  </span>
+                </div>
+
+                {/* Number Counter */}
                 <div className="text-4xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-rose-500 to-red-400 mb-2">
                   <StatCounter 
                     end={stat.numeric} 
@@ -124,17 +155,21 @@ export const Stats: React.FC = () => {
                     suffix={stat.suffix} 
                   />
                 </div>
-                <div className="text-base font-bold text-zinc-900 dark:text-zinc-100 mb-1">
-                  {stat.label}
-                </div>
-                <p className="text-xs text-zinc-500 dark:text-zinc-400 max-w-xs leading-relaxed">
-                  {stat.description}
-                </p>
-              </div>
-            ))}
-          </div>
 
+                {/* Label & Description */}
+                <div>
+                  <div className="text-base font-bold text-zinc-950 dark:text-zinc-100 mb-1.5">
+                    {stat.label}
+                  </div>
+                  <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                    {stat.description}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
         </div>
+
       </div>
     </section>
   );

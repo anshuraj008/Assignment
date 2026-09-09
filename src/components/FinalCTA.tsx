@@ -23,8 +23,11 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({ onOpenDemoModal }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative rounded-3xl bg-gradient-to-b from-zinc-900 via-zinc-950 to-black border border-red-500/30 p-8 sm:p-14 lg:p-18 text-center shadow-2xl shadow-red-950/40 overflow-hidden">
           
-          {/* Radial Ambient Glow */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-red-600/20 blur-[130px] rounded-full pointer-events-none -z-10" />
+          {/* Radial Ambient Glow with breathing pulse */}
+          <div className="absolute top-1/2 left-1/2 w-[600px] h-[350px] bg-red-600/20 blur-[130px] rounded-full pointer-events-none -z-10 animate-glow-pulse" />
+
+          {/* Glowing top line */}
+          <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-red-500/70 to-transparent" />
 
           {/* Grid pattern */}
           <div className="absolute inset-0 bg-grid-pattern opacity-20 pointer-events-none" />
@@ -50,7 +53,7 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({ onOpenDemoModal }) => {
               <a
                 href="#pricing"
                 onClick={handleScrollToPricing}
-                className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-8 py-4 rounded-xl font-bold text-white bg-gradient-to-r from-red-600 via-rose-600 to-red-600 hover:from-red-500 hover:to-rose-500 shadow-xl shadow-red-600/30 hover:shadow-red-600/50 hover:-translate-y-0.5 active:translate-y-0 transition-all text-base"
+                className="btn-shimmer w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-8 py-4 rounded-xl font-bold text-white bg-gradient-to-r from-red-600 via-rose-600 to-red-600 hover:from-red-500 hover:to-rose-500 shadow-xl shadow-red-600/30 hover:shadow-red-600/50 hover:-translate-y-0.5 active:translate-y-0 transition-all text-base"
               >
                 <span>Start 14-Day Free Trial</span>
                 <ArrowRight className="w-5 h-5" />

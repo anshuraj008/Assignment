@@ -19,16 +19,24 @@ type TabType = 'plan' | 'automate' | 'analyze';
 export const ProductPreview: React.FC = () => {
   const [activeTab, setActiveTab] = useState<TabType>('plan');
   const [isSimulating, setIsSimulating] = useState(false);
+  const [simStep, setSimStep] = useState<number>(0);
   const [simulationComplete, setSimulationComplete] = useState(false);
   const [aiOptimized, setAiOptimized] = useState(false);
 
   const runSimulation = () => {
     setIsSimulating(true);
     setSimulationComplete(false);
+    setSimStep(1);
+    setTimeout(() => {
+      setSimStep(2);
+    }, 400);
+    setTimeout(() => {
+      setSimStep(3);
+    }, 850);
     setTimeout(() => {
       setIsSimulating(false);
       setSimulationComplete(true);
-    }, 1200);
+    }, 1300);
   };
 
   return (
@@ -315,12 +323,16 @@ export const ProductPreview: React.FC = () => {
                 <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3 relative py-4">
                   
                   {/* Node 1: Trigger */}
-                  <div className="flex-1 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-left relative group">
+                  <div className={`flex-1 p-4 rounded-xl border transition-all duration-300 text-left relative group ${
+                    simStep >= 1
+                      ? 'border-red-500 ring-2 ring-red-500/30 bg-red-500/5 dark:bg-red-500/10 shadow-md'
+                      : 'bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800'
+                  }`}>
                     <div className="flex items-center justify-between mb-2">
                       <span className="text-[10px] font-bold uppercase tracking-wider text-red-500 bg-red-500/10 px-2 py-0.5 rounded">
                         Step 1: Event Trigger
                       </span>
-                      <AlertCircle className="w-4 h-4 text-red-400" />
+                      <AlertCircle className={`w-4 h-4 text-red-400 ${simStep === 1 ? 'animate-bounce' : ''}`} />
                     </div>
                     <div className="font-semibold text-xs text-zinc-900 dark:text-white">
                       Customer Report on Linear
@@ -330,17 +342,23 @@ export const ProductPreview: React.FC = () => {
                     </p>
                   </div>
 
-                  <div className="hidden md:flex items-center justify-center text-zinc-400">
+                  <div className={`hidden md:flex items-center justify-center transition-all duration-300 ${
+                    simStep >= 2 ? 'text-red-500 scale-125' : 'text-zinc-400'
+                  }`}>
                     <ArrowRight className="w-5 h-5 text-red-400" />
                   </div>
 
                   {/* Node 2: AI Processing */}
-                  <div className={`flex-1 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-900 border ${isSimulating ? 'border-red-500 ring-2 ring-red-500/30 animate-pulse' : 'border-zinc-200 dark:border-zinc-800'} text-left relative`}>
+                  <div className={`flex-1 p-4 rounded-xl border transition-all duration-300 text-left relative ${
+                    simStep >= 2
+                      ? 'border-rose-500 ring-2 ring-rose-500/30 bg-rose-500/5 dark:bg-rose-500/10 shadow-md'
+                      : 'bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800'
+                  }`}>
                     <div className="flex items-center justify-between mb-2">
                       <span className="text-[10px] font-bold uppercase tracking-wider text-rose-500 bg-rose-500/10 px-2 py-0.5 rounded">
                         Step 2: Nexora AI Agent
                       </span>
-                      <Cpu className="w-4 h-4 text-rose-400" />
+                      <Cpu className={`w-4 h-4 text-rose-400 ${simStep === 2 ? 'animate-spin' : ''}`} />
                     </div>
                     <div className="font-semibold text-xs text-zinc-900 dark:text-white">
                       Inspect Stack Trace & Blame
@@ -350,12 +368,18 @@ export const ProductPreview: React.FC = () => {
                     </p>
                   </div>
 
-                  <div className="hidden md:flex items-center justify-center text-zinc-400">
+                  <div className={`hidden md:flex items-center justify-center transition-all duration-300 ${
+                    simStep >= 3 ? 'text-emerald-500 scale-125' : 'text-zinc-400'
+                  }`}>
                     <ArrowRight className="w-5 h-5 text-rose-400" />
                   </div>
 
                   {/* Node 3: Multi-Tool Actions */}
-                  <div className="flex-1 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-left relative">
+                  <div className={`flex-1 p-4 rounded-xl border transition-all duration-300 text-left relative ${
+                    simStep >= 3
+                      ? 'border-emerald-500 ring-2 ring-emerald-500/30 bg-emerald-500/5 dark:bg-emerald-500/10 shadow-md'
+                      : 'bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800'
+                  }`}>
                     <div className="flex items-center justify-between mb-2">
                       <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-500 bg-emerald-500/10 px-2 py-0.5 rounded">
                         Step 3: Dual Action

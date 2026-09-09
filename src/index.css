@@ -96,5 +96,59 @@
 /* Glowing top beam line */
 .beam-line {
   height: 1px;
-  background: linear-gradient(90deg, transparent 0%, rgba(220, 38, 38, 0.6) 50%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(220, 38, 38, 0.7) 50%, transparent 100%);
 }
+
+/* Button light sweep shine */
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shimmer::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.28) 50%,
+    transparent 100%
+  );
+  transform: rotate(25deg);
+  animation: btnShimmer 4.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  pointer-events: none;
+}
+
+@keyframes btnShimmer {
+  0% {
+    left: -75%;
+  }
+  25%, 100% {
+    left: 135%;
+  }
+}
+
+/* Pause animation on hover */
+.pause-on-hover:hover {
+  animation-play-state: paused;
+}
+
+/* Edge gradient masks for seamless marquee ticker */
+.marquee-mask {
+  mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+}
+
+/* Micro card interaction */
+.card-interactive {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+
+.card-interactive:hover {
+  transform: translateY(-3px);
+}
+

@@ -47,16 +47,20 @@ export const AccordionItem: React.FC<AccordionItemProps> = ({
         </div>
       </button>
 
-      {isOpen && (
-        <div
-          id={`faq-answer-${id}`}
-          role="region"
-          aria-labelledby={`faq-btn-${id}`}
-          className="px-6 pb-6 pt-1 text-sm sm:text-base text-zinc-600 dark:text-zinc-400 leading-relaxed animate-fade-in border-t border-zinc-100 dark:border-zinc-800/60 mt-1"
-        >
-          {answer}
+      <div
+        id={`faq-answer-${id}`}
+        role="region"
+        aria-labelledby={`faq-btn-${id}`}
+        className={`grid transition-all duration-300 ease-in-out ${
+          isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+        }`}
+      >
+        <div className="overflow-hidden">
+          <div className="px-6 pb-6 pt-2 text-sm sm:text-base text-zinc-600 dark:text-zinc-400 leading-relaxed border-t border-zinc-100 dark:border-zinc-800/60">
+            {answer}
+          </div>
         </div>
-      )}
+      </div>
     </div>
   );
 };
