@@ -12,9 +12,9 @@
   }
 }
 
-/* Custom modern scrollbar */
+/* Custom minimal scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
@@ -39,26 +39,62 @@
   background: #a1a1aa;
 }
 
-/* Background grid patterns for subtle SaaS elegance */
-.bg-grid-pattern {
-  background-size: 32px 32px;
-  background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+/* High-tech dot-matrix grid with soft radial mask */
+.bg-dots-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.14) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(ellipse 75% 65% at 50% 25%, #000 20%, transparent 85%);
+  -webkit-mask-image: radial-gradient(ellipse 75% 65% at 50% 25%, #000 20%, transparent 85%);
 }
 
-.light .bg-grid-pattern {
-  background-size: 32px 32px;
-  background-image: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+.light .bg-dots-pattern {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(ellipse 75% 65% at 50% 25%, #000 20%, transparent 85%);
+  -webkit-mask-image: radial-gradient(ellipse 75% 65% at 50% 25%, #000 20%, transparent 85%);
 }
 
-/* Glow effects */
-.violet-radial-glow {
-  background: radial-gradient(circle at 50% 0%, rgba(139, 92, 246, 0.15) 0%, rgba(15, 15, 20, 0) 70%);
+/* Linear/Vercel style horizon spotlight */
+.aurora-spotlight {
+  background: radial-gradient(ellipse 80% 55% at 50% -15%, rgba(139, 92, 246, 0.25), rgba(99, 102, 241, 0.1) 40%, rgba(9, 9, 11, 0) 80%);
 }
 
-.light .violet-radial-glow {
-  background: radial-gradient(circle at 50% 0%, rgba(139, 92, 246, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+.light .aurora-spotlight {
+  background: radial-gradient(ellipse 80% 55% at 50% -15%, rgba(139, 92, 246, 0.15), rgba(99, 102, 241, 0.06) 40%, rgba(255, 255, 255, 0) 80%);
+}
+
+/* Thin liquid glass surface */
+.liquid-glass {
+  background: rgba(9, 9, 11, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.light .liquid-glass {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Modal liquid glass */
+.modal-liquid-glass {
+  background: rgba(14, 14, 18, 0.92);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.light .modal-liquid-glass {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Glowing top beam line */
+.beam-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(139, 92, 246, 0.6) 50%, transparent 100%);
 }
