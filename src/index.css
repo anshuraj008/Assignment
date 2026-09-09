@@ -56,11 +56,11 @@
 
 /* Linear/Vercel style horizon spotlight */
 .aurora-spotlight {
-  background: radial-gradient(ellipse 80% 55% at 50% -15%, rgba(139, 92, 246, 0.25), rgba(99, 102, 241, 0.1) 40%, rgba(9, 9, 11, 0) 80%);
+  background: radial-gradient(ellipse 80% 55% at 50% -15%, rgba(220, 38, 38, 0.22), rgba(153, 27, 27, 0.12) 40%, rgba(9, 9, 11, 0) 80%);
 }
 
 .light .aurora-spotlight {
-  background: radial-gradient(ellipse 80% 55% at 50% -15%, rgba(139, 92, 246, 0.15), rgba(99, 102, 241, 0.06) 40%, rgba(255, 255, 255, 0) 80%);
+  background: radial-gradient(ellipse 80% 55% at 50% -15%, rgba(220, 38, 38, 0.12), rgba(153, 27, 27, 0.06) 40%, rgba(255, 255, 255, 0) 80%);
 }
 
 /* Thin liquid glass surface */
@@ -96,5 +96,5 @@
 /* Glowing top beam line */
 .beam-line {
   height: 1px;
-  background: linear-gradient(90deg, transparent 0%, rgba(139, 92, 246, 0.6) 50%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(220, 38, 38, 0.6) 50%, transparent 100%);
 }

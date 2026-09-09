@@ -47,16 +47,16 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemoModal }) => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
         
         {/* Floating Liquid-Glass Eyebrow Badge */}
-        <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full liquid-glass shadow-sm mb-8 hover:border-violet-500/40 transition-colors cursor-default">
+        <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full liquid-glass shadow-sm mb-8 hover:border-red-500/40 transition-colors cursor-default">
           <span className="flex h-2 w-2 relative">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-violet-400 opacity-75" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-violet-500" />
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
           </span>
           <span className="text-xs font-semibold text-zinc-900 dark:text-zinc-200 pl-1">
             Nexora 2.0 Released
           </span>
           <span className="text-zinc-400 dark:text-zinc-600">•</span>
-          <span className="text-xs font-medium text-violet-600 dark:text-violet-400 flex items-center">
+          <span className="text-xs font-medium text-red-600 dark:text-red-400 flex items-center">
             Autonomous Work Intelligence
             <Sparkles className="w-3 h-3 ml-1" />
           </span>
@@ -65,7 +65,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemoModal }) => {
         {/* Confident Headline with Rich Text Accent */}
         <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-zinc-950 dark:text-white leading-[1.08] mb-6">
           Move work forward.{' '}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-indigo-300 to-purple-200">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-400 to-red-300">
             Automatically.
           </span>
         </h1>
@@ -80,7 +80,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemoModal }) => {
           <a
             href="#pricing"
             onClick={handleScrollToPricing}
-            className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-6 py-3 rounded-xl font-semibold text-sm text-white bg-violet-600 hover:bg-violet-500 shadow-md shadow-violet-600/20 hover:shadow-violet-600/35 hover:-translate-y-0.5 active:translate-y-0 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-500"
+            className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-6 py-3 rounded-xl font-semibold text-sm text-white bg-red-600 hover:bg-red-500 shadow-md shadow-red-600/20 hover:shadow-red-600/35 hover:-translate-y-0.5 active:translate-y-0 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
           >
             <span>Start 14-Day Free Trial</span>
             <ArrowRight className="w-4 h-4" />
@@ -91,7 +91,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemoModal }) => {
             onClick={onOpenDemoModal}
             className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-5 py-3 rounded-xl font-medium text-sm text-zinc-800 dark:text-zinc-200 bg-white/60 dark:bg-zinc-900/80 hover:bg-zinc-100 dark:hover:bg-zinc-850 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:-translate-y-0.5"
           >
-            <Play className="w-3.5 h-3.5 text-violet-500" />
+            <Play className="w-3.5 h-3.5 text-red-500" />
             <span>Interactive Demo</span>
           </button>
         </div>
@@ -109,7 +109,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemoModal }) => {
           </div>
           <span className="hidden sm:inline text-zinc-300 dark:text-zinc-700">•</span>
           <div className="flex items-center space-x-1.5">
-            <ShieldCheck className="w-3.5 h-3.5 text-violet-400" />
+            <ShieldCheck className="w-3.5 h-3.5 text-red-400" />
             <span>SOC-2 Type II Certified</span>
           </div>
         </div>
@@ -118,10 +118,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemoModal }) => {
         <div className="max-w-xl mx-auto text-left">
           <form
             onSubmit={handleCommandSubmit}
-            className="p-1.5 pl-3.5 rounded-xl bg-zinc-900/90 dark:bg-zinc-950/90 border border-zinc-700/60 dark:border-zinc-800 shadow-xl flex items-center justify-between text-xs transition-colors focus-within:border-violet-500/80"
+            className="p-1.5 pl-3.5 rounded-xl bg-zinc-900/90 dark:bg-zinc-950/90 border border-zinc-700/60 dark:border-zinc-800 shadow-xl flex items-center justify-between text-xs transition-colors focus-within:border-red-500/80"
           >
             <div className="flex items-center space-x-2.5 flex-1 mr-2">
-              <Terminal className="w-3.5 h-3.5 text-violet-400 shrink-0" />
+              <Terminal className="w-3.5 h-3.5 text-red-400 shrink-0" />
               <input
                 type="text"
                 value={commandText}
@@ -141,9 +141,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemoModal }) => {
           </form>
 
           {commandResponse && (
-            <div className="mt-2.5 p-2.5 rounded-lg bg-violet-500/10 border border-violet-500/20 text-xs text-violet-300 flex items-center justify-between animate-fade-in">
+            <div className="mt-2.5 p-2.5 rounded-lg bg-red-500/10 border border-red-500/20 text-xs text-red-300 flex items-center justify-between animate-fade-in">
               <span>{commandResponse}</span>
-              <span className="font-mono text-[10px] text-violet-400">42ms</span>
+              <span className="font-mono text-[10px] text-red-400">42ms</span>
             </div>
           )}
         </div>

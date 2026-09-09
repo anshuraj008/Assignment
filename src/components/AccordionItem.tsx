@@ -26,11 +26,11 @@ export const AccordionItem: React.FC<AccordionItemProps> = ({
         aria-expanded={isOpen}
         aria-controls={`faq-answer-${id}`}
         onClick={onToggle}
-        className="w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-500 hover:bg-zinc-50 dark:hover:bg-zinc-850/50 transition-colors"
+        className="w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 hover:bg-zinc-50 dark:hover:bg-zinc-850/50 transition-colors"
       >
         <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
           {category && (
-            <span className="text-[11px] font-bold uppercase tracking-wider text-violet-600 dark:text-violet-400 bg-violet-500/10 px-2 py-0.5 rounded w-fit">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-red-600 dark:text-red-400 bg-red-500/10 px-2 py-0.5 rounded w-fit">
               {category}
             </span>
           )}
@@ -40,7 +40,7 @@ export const AccordionItem: React.FC<AccordionItemProps> = ({
         </div>
         <div
           className={`w-8 h-8 rounded-full bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center text-zinc-500 transition-transform duration-300 shrink-0 ${
-            isOpen ? 'rotate-180 text-violet-500 bg-violet-500/10' : ''
+            isOpen ? 'rotate-180 text-red-500 bg-red-500/10' : ''
           }`}
         >
           <ChevronDown className="w-4 h-4" />

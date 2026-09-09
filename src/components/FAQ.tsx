@@ -60,7 +60,7 @@ export const FAQ: React.FC = () => {
         
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-violet-500/10 dark:bg-violet-500/20 text-violet-600 dark:text-violet-400 text-xs font-semibold mb-4 border border-violet-500/20">
+          <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-red-500/10 dark:bg-red-500/20 text-red-600 dark:text-red-400 text-xs font-semibold mb-4 border border-red-500/20">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Got Questions?</span>
           </div>
@@ -90,7 +90,7 @@ export const FAQ: React.FC = () => {
         {/* Bottom Support Callout */}
         <div className="mt-12 p-6 rounded-2xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-center flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center space-x-3 text-left">
-            <div className="w-10 h-10 rounded-xl bg-violet-500/10 text-violet-500 flex items-center justify-center shrink-0">
+            <div className="w-10 h-10 rounded-xl bg-red-500/10 text-red-500 flex items-center justify-center shrink-0">
               <HelpCircle className="w-5 h-5" />
             </div>
             <div>

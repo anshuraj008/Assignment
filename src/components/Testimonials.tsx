@@ -67,7 +67,7 @@ export const Testimonials: React.FC = () => {
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-violet-500/10 dark:bg-violet-500/20 text-violet-600 dark:text-violet-400 text-xs font-semibold mb-4 border border-violet-500/20">
+          <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-red-500/10 dark:bg-red-500/20 text-red-600 dark:text-red-400 text-xs font-semibold mb-4 border border-red-500/20">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Loved by High-Growth Teams</span>
           </div>
@@ -82,7 +82,7 @@ export const Testimonials: React.FC = () => {
         {/* Interactive Testimonial Carousel Card */}
         <div className="max-w-4xl mx-auto">
           <div className="relative p-8 sm:p-12 rounded-3xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-xl overflow-hidden">
-            <Quote className="w-20 h-20 text-violet-500/10 dark:text-violet-500/15 absolute -top-2 -right-2 pointer-events-none" />
+            <Quote className="w-20 h-20 text-red-500/10 dark:text-red-500/15 absolute -top-2 -right-2 pointer-events-none" />
 
             <div className="flex items-center space-x-1 text-amber-400 mb-6">
               {[...Array(active.rating)].map((_, i) => (
@@ -103,7 +103,7 @@ export const Testimonials: React.FC = () => {
                 <img
                   src={active.avatar}
                   alt={active.name}
-                  className="w-12 h-12 rounded-full object-cover ring-2 ring-violet-500/30"
+                  className="w-12 h-12 rounded-full object-cover ring-2 ring-red-500/30"
                 />
                 <div>
                   <h4 className="font-bold text-base text-zinc-900 dark:text-white">
@@ -146,7 +146,7 @@ export const Testimonials: React.FC = () => {
                 onClick={() => setCurrentIndex(i)}
                 className={`h-2 rounded-full transition-all duration-300 ${
                   currentIndex === i
-                    ? 'w-8 bg-violet-600'
+                    ? 'w-8 bg-red-600'
                     : 'w-2 bg-zinc-300 dark:bg-zinc-700 hover:bg-zinc-400'
                 }`}
                 aria-label={`Go to slide ${i + 1}`}

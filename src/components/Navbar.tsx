@@ -78,7 +78,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenDemoModal }) => {
             className="flex items-center space-x-2.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded-lg p-1"
             aria-label="NEXORA Home"
           >
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-violet-600 via-indigo-600 to-brand-400 p-[1px] shadow-glow-sm transition-transform duration-300 group-hover:scale-105 flex items-center justify-center">
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-red-600 via-rose-600 to-red-400 p-[1px] shadow-glow-sm transition-transform duration-300 group-hover:scale-105 flex items-center justify-center">
               <div className="w-full h-full bg-zinc-950 rounded-[11px] flex items-center justify-center">
                 <Sparkles className="w-5 h-5 text-brand-400 transition-transform duration-300 group-hover:rotate-12" />
               </div>
@@ -135,7 +135,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenDemoModal }) => {
             <a
               href="#pricing"
               onClick={(e) => handleLinkClick(e, '#pricing')}
-              className="group inline-flex items-center space-x-1.5 px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 rounded-xl shadow-sm hover:shadow-glow-sm transition-all duration-200 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
+              className="group inline-flex items-center space-x-1.5 px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 rounded-xl shadow-sm hover:shadow-glow-sm transition-all duration-200 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
             >
               <span>Get Started</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
@@ -212,7 +212,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenDemoModal }) => {
               <a
                 href="#pricing"
                 onClick={(e) => handleLinkClick(e, '#pricing')}
-                className="w-full py-3 px-4 rounded-xl text-center text-sm font-semibold text-white bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 shadow-md shadow-violet-500/20"
+                className="w-full py-3 px-4 rounded-xl text-center text-sm font-semibold text-white bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 shadow-md shadow-red-500/20"
               >
                 Start Free 14-Day Trial
               </a>

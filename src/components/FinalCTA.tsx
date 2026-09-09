@@ -21,23 +21,23 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({ onOpenDemoModal }) => {
   return (
     <section className="py-20 md:py-28 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative rounded-3xl bg-gradient-to-b from-zinc-900 via-zinc-950 to-black border border-violet-500/30 p-8 sm:p-14 lg:p-18 text-center shadow-2xl shadow-violet-950/40 overflow-hidden">
+        <div className="relative rounded-3xl bg-gradient-to-b from-zinc-900 via-zinc-950 to-black border border-red-500/30 p-8 sm:p-14 lg:p-18 text-center shadow-2xl shadow-red-950/40 overflow-hidden">
           
           {/* Radial Ambient Glow */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-violet-600/20 blur-[130px] rounded-full pointer-events-none -z-10" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-red-600/20 blur-[130px] rounded-full pointer-events-none -z-10" />
 
           {/* Grid pattern */}
           <div className="absolute inset-0 bg-grid-pattern opacity-20 pointer-events-none" />
 
           <div className="max-w-3xl mx-auto relative z-10">
-            <div className="inline-flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full bg-violet-500/10 text-violet-400 text-xs font-semibold mb-6 border border-violet-500/25">
+            <div className="inline-flex items-center space-x-1.5 px-3.5 py-1.5 rounded-full bg-red-500/10 text-red-400 text-xs font-semibold mb-6 border border-red-500/25">
               <Sparkles className="w-3.5 h-3.5" />
               <span>Transform Your Engineering Velocity Today</span>
             </div>
 
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white mb-6 leading-tight">
               Move work forward.{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-indigo-300 to-brand-200">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-400 to-red-200">
                 Automatically.
               </span>
             </h2>
@@ -50,7 +50,7 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({ onOpenDemoModal }) => {
               <a
                 href="#pricing"
                 onClick={handleScrollToPricing}
-                className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-8 py-4 rounded-xl font-bold text-white bg-gradient-to-r from-violet-600 via-indigo-600 to-violet-600 hover:from-violet-500 hover:to-indigo-500 shadow-xl shadow-violet-600/30 hover:shadow-violet-600/50 hover:-translate-y-0.5 active:translate-y-0 transition-all text-base"
+                className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-8 py-4 rounded-xl font-bold text-white bg-gradient-to-r from-red-600 via-rose-600 to-red-600 hover:from-red-500 hover:to-rose-500 shadow-xl shadow-red-600/30 hover:shadow-red-600/50 hover:-translate-y-0.5 active:translate-y-0 transition-all text-base"
               >
                 <span>Start 14-Day Free Trial</span>
                 <ArrowRight className="w-5 h-5" />
@@ -61,7 +61,7 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({ onOpenDemoModal }) => {
                 onClick={onOpenDemoModal}
                 className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-7 py-4 rounded-xl font-semibold text-white bg-zinc-800/80 hover:bg-zinc-700/80 border border-zinc-700 hover:border-zinc-600 transition-all hover:-translate-y-0.5 text-base"
               >
-                <Play className="w-4 h-4 text-violet-400 fill-violet-400/20" />
+                <Play className="w-4 h-4 text-red-400 fill-red-400/20" />
                 <span>Book 15-Min Live Demo</span>
               </button>
             </div>

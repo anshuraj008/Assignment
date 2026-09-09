@@ -110,7 +110,7 @@ export const Solutions: React.FC<{ onOpenDemoModal: () => void }> = ({ onOpenDem
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-violet-500/10 dark:bg-violet-500/20 text-violet-600 dark:text-violet-400 text-xs font-semibold mb-4 border border-violet-500/20">
+          <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-red-500/10 dark:bg-red-500/20 text-red-600 dark:text-red-400 text-xs font-semibold mb-4 border border-red-500/20">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Tailored For Every Role</span>
           </div>
@@ -134,7 +134,7 @@ export const Solutions: React.FC<{ onOpenDemoModal: () => void }> = ({ onOpenDem
                 onClick={() => setActiveRole(key)}
                 className={`flex items-center space-x-2 px-5 py-3 rounded-xl text-sm font-bold transition-all duration-200 border ${
                   isSelected
-                    ? 'bg-violet-600 text-white border-violet-600 shadow-md shadow-violet-600/20'
+                    ? 'bg-red-600 text-white border-red-600 shadow-md shadow-red-600/20'
                     : 'bg-zinc-50 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700'
                 }`}
               >
@@ -152,7 +152,7 @@ export const Solutions: React.FC<{ onOpenDemoModal: () => void }> = ({ onOpenDem
             {/* Left Column: Details & Checklist */}
             <div className="lg:col-span-7 space-y-6">
               <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-lg bg-zinc-200/60 dark:bg-zinc-800 text-xs font-semibold text-zinc-700 dark:text-zinc-300">
-                <RoleIcon className="w-3.5 h-3.5 text-violet-500" />
+                <RoleIcon className="w-3.5 h-3.5 text-red-500" />
                 <span>NEXORA For {activeData.role}</span>
               </div>
 
@@ -176,7 +176,7 @@ export const Solutions: React.FC<{ onOpenDemoModal: () => void }> = ({ onOpenDem
               <div className="pt-4 flex flex-wrap items-center gap-4">
                 <button
                   onClick={onOpenDemoModal}
-                  className="inline-flex items-center space-x-2 px-6 py-3 rounded-xl font-semibold text-sm text-white bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 shadow-md shadow-violet-500/25 transition-all"
+                  className="inline-flex items-center space-x-2 px-6 py-3 rounded-xl font-semibold text-sm text-white bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 shadow-md shadow-red-500/25 transition-all"
                 >
                   <span>See It in Action for {activeData.role}</span>
                   <ArrowRight className="w-4 h-4" />
@@ -205,7 +205,7 @@ export const Solutions: React.FC<{ onOpenDemoModal: () => void }> = ({ onOpenDem
 
               {/* Quote Card */}
               <div className="p-6 rounded-2xl bg-white dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700/60 shadow-sm relative">
-                <Quote className="w-8 h-8 text-violet-500/20 absolute top-4 right-4" />
+                <Quote className="w-8 h-8 text-red-500/20 absolute top-4 right-4" />
                 <p className="text-sm italic text-zinc-700 dark:text-zinc-300 leading-relaxed mb-4">
                   "{activeData.quote.text}"
                 </p>

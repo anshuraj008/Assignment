@@ -39,7 +39,7 @@ export const HowItWorks: React.FC = () => {
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-indigo-500/10 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400 text-xs font-semibold mb-4 border border-indigo-500/20">
+          <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-red-500/10 dark:bg-red-500/20 text-red-600 dark:text-red-400 text-xs font-semibold mb-4 border border-red-500/20">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Effortless Onboarding</span>
           </div>
@@ -58,20 +58,20 @@ export const HowItWorks: React.FC = () => {
             return (
               <div
                 key={step.number}
-                className="group relative p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:border-violet-500/40 dark:hover:border-violet-500/50 hover:shadow-glow-sm transition-all duration-300 flex flex-col justify-between"
+                className="group relative p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:border-red-500/40 dark:hover:border-red-500/50 hover:shadow-glow-sm transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
                   {/* Step Number & Icon */}
                   <div className="flex items-center justify-between mb-6">
-                    <span className="font-mono text-3xl font-black text-zinc-300 dark:text-zinc-700 group-hover:text-violet-500 transition-colors">
+                    <span className="font-mono text-3xl font-black text-zinc-300 dark:text-zinc-700 group-hover:text-red-500 transition-colors">
                       {step.number}
                     </span>
-                    <div className="w-11 h-11 rounded-xl bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 group-hover:bg-violet-500/10 group-hover:text-violet-600 dark:group-hover:text-violet-400 flex items-center justify-center transition-colors">
+                    <div className="w-11 h-11 rounded-xl bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 group-hover:bg-red-500/10 group-hover:text-red-600 dark:group-hover:text-red-400 flex items-center justify-center transition-colors">
                       <Icon className="w-5 h-5" />
                     </div>
                   </div>
 
-                  <h3 className="text-lg font-bold text-zinc-950 dark:text-white mb-2 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">
+                  <h3 className="text-lg font-bold text-zinc-950 dark:text-white mb-2 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors">
                     {step.title}
                   </h3>
                   <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
@@ -80,8 +80,8 @@ export const HowItWorks: React.FC = () => {
                 </div>
 
                 <div className="pt-4 border-t border-zinc-100 dark:border-zinc-800/80">
-                  <span className="inline-flex items-center text-xs font-semibold text-violet-600 dark:text-violet-400">
-                    <span className="w-1.5 h-1.5 rounded-full bg-violet-500 mr-2" />
+                  <span className="inline-flex items-center text-xs font-semibold text-red-600 dark:text-red-400">
+                    <span className="w-1.5 h-1.5 rounded-full bg-red-500 mr-2" />
                     {step.highlight}
                   </span>
                 </div>

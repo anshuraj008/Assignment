@@ -108,7 +108,7 @@ export const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
             <div className="pt-4">
               <button
                 onClick={handleResetAndClose}
-                className="w-full py-3 px-4 rounded-xl text-sm font-bold text-white bg-violet-600 hover:bg-violet-500 transition-colors shadow-md shadow-violet-500/20"
+                className="w-full py-3 px-4 rounded-xl text-sm font-bold text-white bg-red-600 hover:bg-red-500 transition-colors shadow-md shadow-red-500/20"
               >
                 Return to NEXORA Workspace
               </button>
@@ -118,7 +118,7 @@ export const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
           <div>
             {/* Header */}
             <div className="mb-6">
-              <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-violet-500/10 text-violet-600 dark:text-violet-400 text-xs font-semibold mb-3 border border-violet-500/20">
+              <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-red-500/10 text-red-600 dark:text-red-400 text-xs font-semibold mb-3 border border-red-500/20">
                 <Calendar className="w-3.5 h-3.5" />
                 <span>15-Minute Live Interactive Demo</span>
               </div>
@@ -148,7 +148,7 @@ export const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="e.g. Alex Henderson"
-                  className="w-full px-4 py-2.5 text-sm rounded-xl bg-zinc-50 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 focus:outline-none focus:ring-2 focus:ring-violet-500 text-zinc-900 dark:text-white"
+                  className="w-full px-4 py-2.5 text-sm rounded-xl bg-zinc-50 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 focus:outline-none focus:ring-2 focus:ring-red-500 text-zinc-900 dark:text-white"
                 />
               </div>
 
@@ -162,7 +162,7 @@ export const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="alex@company.com"
-                  className="w-full px-4 py-2.5 text-sm rounded-xl bg-zinc-50 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 focus:outline-none focus:ring-2 focus:ring-violet-500 text-zinc-900 dark:text-white"
+                  className="w-full px-4 py-2.5 text-sm rounded-xl bg-zinc-50 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 focus:outline-none focus:ring-2 focus:ring-red-500 text-zinc-900 dark:text-white"
                 />
               </div>
 
@@ -174,7 +174,7 @@ export const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
                   <select
                     value={companySize}
                     onChange={(e) => setCompanySize(e.target.value)}
-                    className="w-full px-3 py-2.5 text-sm rounded-xl bg-zinc-50 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 focus:outline-none focus:ring-2 focus:ring-violet-500 text-zinc-900 dark:text-white"
+                    className="w-full px-3 py-2.5 text-sm rounded-xl bg-zinc-50 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 focus:outline-none focus:ring-2 focus:ring-red-500 text-zinc-900 dark:text-white"
                   >
                     <option value="1-15">1 - 15 people</option>
                     <option value="20-100">20 - 100 people</option>
@@ -190,7 +190,7 @@ export const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
                   <select
                     value={interest}
                     onChange={(e) => setInterest(e.target.value)}
-                    className="w-full px-3 py-2.5 text-sm rounded-xl bg-zinc-50 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 focus:outline-none focus:ring-2 focus:ring-violet-500 text-zinc-900 dark:text-white"
+                    className="w-full px-3 py-2.5 text-sm rounded-xl bg-zinc-50 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 focus:outline-none focus:ring-2 focus:ring-red-500 text-zinc-900 dark:text-white"
                   >
                     <option value="sprint-orchestration">Sprint Balancing</option>
                     <option value="knowledge-graph">Knowledge Search</option>
@@ -204,7 +204,7 @@ export const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full py-3.5 px-4 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 shadow-lg shadow-violet-500/25 flex items-center justify-center space-x-2 transition-all disabled:opacity-50"
+                  className="w-full py-3.5 px-4 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 shadow-lg shadow-red-500/25 flex items-center justify-center space-x-2 transition-all disabled:opacity-50"
                 >
                   {isLoading ? (
                     <>

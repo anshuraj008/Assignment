@@ -73,7 +73,7 @@ export const Pricing: React.FC<PricingProps> = ({ onOpenDemoModal }) => {
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-violet-500/10 dark:bg-violet-500/20 text-violet-600 dark:text-violet-400 text-xs font-semibold mb-4 border border-violet-500/20">
+          <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-red-500/10 dark:bg-red-500/20 text-red-600 dark:text-red-400 text-xs font-semibold mb-4 border border-red-500/20">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Transparent, Scalable Pricing</span>
           </div>
@@ -96,8 +96,8 @@ export const Pricing: React.FC<PricingProps> = ({ onOpenDemoModal }) => {
             role="switch"
             aria-checked={billingCycle === 'annual'}
             onClick={() => setBillingCycle(billingCycle === 'annual' ? 'monthly' : 'annual')}
-            className={`relative inline-flex h-7 w-14 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-500 ${
-              billingCycle === 'annual' ? 'bg-violet-600' : 'bg-zinc-300 dark:bg-zinc-700'
+            className={`relative inline-flex h-7 w-14 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-red-500 ${
+              billingCycle === 'annual' ? 'bg-red-600' : 'bg-zinc-300 dark:bg-zinc-700'
             }`}
           >
             <span
@@ -126,13 +126,13 @@ export const Pricing: React.FC<PricingProps> = ({ onOpenDemoModal }) => {
                 key={plan.id}
                 className={`relative rounded-3xl p-8 transition-all duration-300 flex flex-col justify-between ${
                   plan.popular
-                    ? 'bg-zinc-900 text-white border-2 border-violet-500 shadow-xl shadow-violet-500/20 lg:-translate-y-2'
+                    ? 'bg-zinc-900 text-white border-2 border-red-500 shadow-xl shadow-red-500/20 lg:-translate-y-2'
                     : 'bg-white dark:bg-zinc-900/60 text-zinc-900 dark:text-white border border-zinc-200 dark:border-zinc-800 shadow-sm hover:border-zinc-300 dark:hover:border-zinc-700'
                 }`}
               >
                 {/* Popular Badge */}
                 {plan.popular && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-violet-600 to-indigo-600 text-white shadow-md shadow-violet-500/30 flex items-center space-x-1">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-red-600 to-rose-600 text-white shadow-md shadow-red-500/30 flex items-center space-x-1">
                     <Zap className="w-3.5 h-3.5 fill-white" />
                     <span>Most Popular</span>
                   </div>
@@ -142,7 +142,7 @@ export const Pricing: React.FC<PricingProps> = ({ onOpenDemoModal }) => {
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="text-xl font-bold">{plan.name}</h3>
                     {plan.popular && (
-                      <span className="text-xs font-semibold text-violet-400 bg-violet-500/10 px-2 py-0.5 rounded-md border border-violet-500/20">
+                      <span className="text-xs font-semibold text-red-400 bg-red-500/10 px-2 py-0.5 rounded-md border border-red-500/20">
                         Recommended
                       </span>
                     )}
@@ -167,7 +167,7 @@ export const Pricing: React.FC<PricingProps> = ({ onOpenDemoModal }) => {
                     onClick={onOpenDemoModal}
                     className={`w-full py-3.5 px-4 rounded-xl font-bold text-sm flex items-center justify-center space-x-2 transition-all duration-200 mb-8 ${
                       plan.popular
-                        ? 'bg-gradient-to-r from-violet-600 via-indigo-600 to-violet-600 hover:from-violet-500 hover:to-indigo-500 text-white shadow-lg shadow-violet-500/30 hover:-translate-y-0.5'
+                        ? 'bg-gradient-to-r from-red-600 via-rose-600 to-red-600 hover:from-red-500 hover:to-rose-500 text-white shadow-lg shadow-red-500/30 hover:-translate-y-0.5'
                         : 'bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-zinc-900 dark:text-white border border-zinc-200 dark:border-zinc-700 hover:-translate-y-0.5'
                     }`}
                   >
@@ -182,7 +182,7 @@ export const Pricing: React.FC<PricingProps> = ({ onOpenDemoModal }) => {
                     </div>
                     {plan.features.map((feature) => (
                       <div key={feature} className="flex items-start space-x-3 text-sm">
-                        <div className="w-4 h-4 rounded-full bg-violet-500/10 dark:bg-violet-500/20 text-violet-600 dark:text-violet-400 flex items-center justify-center shrink-0 mt-0.5">
+                        <div className="w-4 h-4 rounded-full bg-red-500/10 dark:bg-red-500/20 text-red-600 dark:text-red-400 flex items-center justify-center shrink-0 mt-0.5">
                           <Check className="w-3 h-3" />
                         </div>
                         <span className="text-zinc-700 dark:text-zinc-300">{feature}</span>

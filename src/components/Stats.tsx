@@ -117,7 +117,7 @@ export const Stats: React.FC = () => {
                 key={stat.label} 
                 className={`flex flex-col items-center text-center ${i !== 0 ? 'pt-8 sm:pt-0 sm:pl-8' : ''}`}
               >
-                <div className="text-4xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-violet-600 via-indigo-500 to-brand-400 mb-2">
+                <div className="text-4xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-rose-500 to-red-400 mb-2">
                   <StatCounter 
                     end={stat.numeric} 
                     decimals={stat.decimals} 

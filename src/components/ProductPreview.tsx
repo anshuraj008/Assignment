@@ -60,7 +60,7 @@ export const ProductPreview: React.FC = () => {
                   : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
               }`}
             >
-              <Kanban className="w-4 h-4 text-violet-500" />
+              <Kanban className="w-4 h-4 text-red-500" />
               <span>1. Plan</span>
             </button>
 
@@ -72,7 +72,7 @@ export const ProductPreview: React.FC = () => {
                   : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
               }`}
             >
-              <Workflow className="w-4 h-4 text-indigo-500" />
+              <Workflow className="w-4 h-4 text-rose-500" />
               <span>2. Automate</span>
             </button>
 
@@ -91,7 +91,7 @@ export const ProductPreview: React.FC = () => {
         </div>
 
         {/* Believable SaaS Product Window */}
-        <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-2xl shadow-violet-900/10 overflow-hidden transition-all duration-300">
+        <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 shadow-2xl shadow-red-950/20 overflow-hidden transition-all duration-300">
           
           {/* macOS Style Window Titlebar */}
           <div className="px-4 py-3.5 bg-zinc-50 dark:bg-zinc-900/80 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400">
@@ -123,7 +123,7 @@ export const ProductPreview: React.FC = () => {
                   <div>
                     <h3 className="text-lg font-bold text-zinc-900 dark:text-white flex items-center">
                       Sprint 24: Core Intelligence Layer
-                      <span className="ml-2.5 px-2 py-0.5 rounded-full text-xs font-semibold bg-violet-500/10 text-violet-600 dark:text-violet-400 border border-violet-500/20">
+                      <span className="ml-2.5 px-2 py-0.5 rounded-full text-xs font-semibold bg-red-500/10 text-red-600 dark:text-red-400 border border-red-500/20">
                         Day 6 of 10
                       </span>
                     </h3>
@@ -173,7 +173,7 @@ export const ProductPreview: React.FC = () => {
 
                       <div className="p-3.5 rounded-lg bg-white dark:bg-zinc-800/90 border border-zinc-200 dark:border-zinc-700/60 shadow-sm">
                         <div className="flex items-center justify-between mb-2">
-                          <span className="text-[10px] font-bold uppercase tracking-wider text-indigo-400 bg-indigo-500/10 px-1.5 py-0.5 rounded">
+                          <span className="text-[10px] font-bold uppercase tracking-wider text-rose-400 bg-rose-500/10 px-1.5 py-0.5 rounded">
                             AI Story
                           </span>
                           <span className="text-xs text-zinc-400 font-mono">NEX-108</span>
@@ -193,11 +193,11 @@ export const ProductPreview: React.FC = () => {
                   <div className="bg-zinc-50 dark:bg-zinc-900/50 p-4 rounded-xl border border-zinc-200/80 dark:border-zinc-800/80">
                     <div className="flex items-center justify-between text-xs font-bold text-zinc-500 uppercase tracking-wider mb-3">
                       <span>In Progress (2)</span>
-                      <span className="w-2 h-2 rounded-full bg-violet-400 animate-pulse" />
+                      <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse" />
                     </div>
                     <div className="space-y-3">
-                      <div className="p-3.5 rounded-lg bg-white dark:bg-zinc-800/90 border border-violet-500/30 dark:border-violet-500/40 shadow-sm relative overflow-hidden">
-                        <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-violet-500 to-indigo-500" />
+                      <div className="p-3.5 rounded-lg bg-white dark:bg-zinc-800/90 border border-red-500/30 dark:border-red-500/40 shadow-sm relative overflow-hidden">
+                        <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-red-500 to-rose-500" />
                         <div className="flex items-center justify-between mb-2">
                           <span className="text-[10px] font-bold uppercase tracking-wider text-red-500 bg-red-500/10 px-1.5 py-0.5 rounded">
                             High Priority
@@ -209,7 +209,7 @@ export const ProductPreview: React.FC = () => {
                         </h4>
                         <div className="flex items-center justify-between text-[11px] text-zinc-500 mt-2">
                           <span className="flex items-center"><Clock className="w-3 h-3 mr-1" /> 8 pts</span>
-                          <span className="px-2 py-0.5 rounded bg-violet-500/10 text-violet-400 text-[10px] font-bold">
+                          <span className="px-2 py-0.5 rounded bg-red-500/10 text-red-400 text-[10px] font-bold">
                             Reviewing PR
                           </span>
                         </div>
@@ -217,7 +217,7 @@ export const ProductPreview: React.FC = () => {
 
                       <div className="p-3.5 rounded-lg bg-white dark:bg-zinc-800/90 border border-zinc-200 dark:border-zinc-700/60 shadow-sm">
                         <div className="flex items-center justify-between mb-2">
-                          <span className="text-[10px] font-bold uppercase tracking-wider text-violet-400 bg-violet-500/10 px-1.5 py-0.5 rounded">
+                          <span className="text-[10px] font-bold uppercase tracking-wider text-rose-400 bg-rose-500/10 px-1.5 py-0.5 rounded">
                             Frontend
                           </span>
                           <span className="text-xs text-zinc-400 font-mono">NEX-101</span>
@@ -293,7 +293,7 @@ export const ProductPreview: React.FC = () => {
                   <button
                     onClick={runSimulation}
                     disabled={isSimulating}
-                    className="px-4 py-2 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 flex items-center space-x-1.5 shadow-md shadow-violet-500/20 disabled:opacity-50 transition-all"
+                    className="px-4 py-2 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 flex items-center space-x-1.5 shadow-md shadow-red-500/20 disabled:opacity-50 transition-all"
                   >
                     <Play className={`w-3.5 h-3.5 ${isSimulating ? 'animate-spin' : ''}`} />
                     <span>{isSimulating ? 'Executing Workflow...' : 'Simulate Workflow Run'}</span>
@@ -317,30 +317,30 @@ export const ProductPreview: React.FC = () => {
                   {/* Node 1: Trigger */}
                   <div className="flex-1 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-left relative group">
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-violet-500 bg-violet-500/10 px-2 py-0.5 rounded">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-red-500 bg-red-500/10 px-2 py-0.5 rounded">
                         Step 1: Event Trigger
                       </span>
-                      <AlertCircle className="w-4 h-4 text-violet-400" />
+                      <AlertCircle className="w-4 h-4 text-red-400" />
                     </div>
                     <div className="font-semibold text-xs text-zinc-900 dark:text-white">
                       Customer Report on Linear
                     </div>
                     <p className="text-[11px] text-zinc-500 mt-1">
-                      Event: Issue created with label <code className="text-violet-400">#severity-p0</code>
+                      Event: Issue created with label <code className="text-red-400">#severity-p0</code>
                     </p>
                   </div>
 
                   <div className="hidden md:flex items-center justify-center text-zinc-400">
-                    <ArrowRight className="w-5 h-5 text-violet-400" />
+                    <ArrowRight className="w-5 h-5 text-red-400" />
                   </div>
 
                   {/* Node 2: AI Processing */}
-                  <div className={`flex-1 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-900 border ${isSimulating ? 'border-violet-500 ring-2 ring-violet-500/30 animate-pulse' : 'border-zinc-200 dark:border-zinc-800'} text-left relative`}>
+                  <div className={`flex-1 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-900 border ${isSimulating ? 'border-red-500 ring-2 ring-red-500/30 animate-pulse' : 'border-zinc-200 dark:border-zinc-800'} text-left relative`}>
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-indigo-500 bg-indigo-500/10 px-2 py-0.5 rounded">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-rose-500 bg-rose-500/10 px-2 py-0.5 rounded">
                         Step 2: Nexora AI Agent
                       </span>
-                      <Cpu className="w-4 h-4 text-indigo-400" />
+                      <Cpu className="w-4 h-4 text-rose-400" />
                     </div>
                     <div className="font-semibold text-xs text-zinc-900 dark:text-white">
                       Inspect Stack Trace & Blame
@@ -351,7 +351,7 @@ export const ProductPreview: React.FC = () => {
                   </div>
 
                   <div className="hidden md:flex items-center justify-center text-zinc-400">
-                    <ArrowRight className="w-5 h-5 text-indigo-400" />
+                    <ArrowRight className="w-5 h-5 text-rose-400" />
                   </div>
 
                   {/* Node 3: Multi-Tool Actions */}
@@ -378,13 +378,13 @@ export const ProductPreview: React.FC = () => {
                     <span className="text-emerald-400">● 100% HEALTHY</span>
                   </div>
                   <p className="text-zinc-400">
-                    <span className="text-violet-400">[14:32:01]</span> Incoming webhook from Linear (Ticket #NEX-104) verified.
+                    <span className="text-red-400">[14:32:01]</span> Incoming webhook from Linear (Ticket #NEX-104) verified.
                   </p>
                   <p className="text-zinc-400">
-                    <span className="text-violet-400">[14:32:02]</span> AI Engine matched defect to src/telemetry/buffer.ts:L42. Confidence: 99.2%.
+                    <span className="text-red-400">[14:32:02]</span> AI Engine matched defect to src/telemetry/buffer.ts:L42. Confidence: 99.2%.
                   </p>
                   <p className="text-emerald-400">
-                    <span className="text-violet-400">[14:32:03]</span> Unit test passed. PR #402 drafted and assigned to team lead.
+                    <span className="text-red-400">[14:32:03]</span> Unit test passed. PR #402 drafted and assigned to team lead.
                   </p>
                 </div>
               </div>
@@ -430,7 +430,7 @@ export const ProductPreview: React.FC = () => {
                   <div className="p-4 rounded-xl bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800">
                     <span className="text-xs text-zinc-500 font-medium">Weekly Hours Saved</span>
                     <div className="text-2xl font-black text-zinc-950 dark:text-white mt-1">14.2 hrs</div>
-                    <span className="text-[11px] text-violet-400 font-semibold flex items-center mt-1">
+                    <span className="text-[11px] text-red-400 font-semibold flex items-center mt-1">
                       Per engineer
                     </span>
                   </div>
@@ -454,8 +454,8 @@ export const ProductPreview: React.FC = () => {
                       <span className="flex items-center text-zinc-400">
                         <span className="w-2.5 h-2.5 rounded-full bg-zinc-400 mr-1.5" /> Planned
                       </span>
-                      <span className="flex items-center text-violet-400 font-semibold">
-                        <span className="w-2.5 h-2.5 rounded-full bg-violet-500 mr-1.5" /> Delivered with AI
+                      <span className="flex items-center text-red-400 font-semibold">
+                        <span className="w-2.5 h-2.5 rounded-full bg-red-500 mr-1.5" /> Delivered with AI
                       </span>
                     </div>
                   </div>
@@ -478,7 +478,7 @@ export const ProductPreview: React.FC = () => {
                           />
                           <div 
                             style={{ height: `${item.actual}%` }} 
-                            className="w-1/2 bg-gradient-to-t from-violet-600 to-indigo-500 rounded-t transition-all duration-500 shadow-sm shadow-violet-500/30" 
+                            className="w-1/2 bg-gradient-to-t from-red-600 to-rose-500 rounded-t transition-all duration-500 shadow-sm shadow-red-500/30" 
                             title={`Delivered: ${item.actual} pts`}
                           />
                         </div>
@@ -489,8 +489,8 @@ export const ProductPreview: React.FC = () => {
                 </div>
 
                 {/* AI Predictive Insight Callout */}
-                <div className="p-4 rounded-xl bg-violet-500/10 border border-violet-500/30 flex items-start space-x-3 text-xs">
-                  <Sparkles className="w-5 h-5 text-violet-400 shrink-0 mt-0.5" />
+                <div className="p-4 rounded-xl bg-red-500/10 border border-red-500/30 flex items-start space-x-3 text-xs">
+                  <Sparkles className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
                   <div>
                     <span className="font-bold text-zinc-900 dark:text-white">
                       AI Opportunity Forecast:

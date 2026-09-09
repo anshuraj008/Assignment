@@ -18,7 +18,7 @@ export const Features: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-violet-500/10 dark:bg-violet-500/20 text-violet-600 dark:text-violet-400 text-xs font-semibold mb-4 border border-violet-500/20">
+          <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-red-500/10 dark:bg-red-500/20 text-red-600 dark:text-red-400 text-xs font-semibold mb-4 border border-red-500/20">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Engineered for Velocity</span>
           </div>
@@ -34,22 +34,22 @@ export const Features: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           
           {/* Card 1: Large Bento (Col-span 2 on lg) */}
-          <div className="lg:col-span-2 group relative p-7 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 hover:border-violet-500/40 dark:hover:border-violet-500/50 shadow-sm hover:shadow-glow-sm transition-all duration-300 overflow-hidden flex flex-col justify-between">
+          <div className="lg:col-span-2 group relative p-7 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 hover:border-red-500/40 dark:hover:border-red-500/50 shadow-sm hover:shadow-glow-sm transition-all duration-300 overflow-hidden flex flex-col justify-between">
             <div className="absolute top-0 right-0 p-8 opacity-5 dark:opacity-10 pointer-events-none group-hover:opacity-15 transition-opacity">
-              <Bot className="w-48 h-48 text-violet-500" />
+              <Bot className="w-48 h-48 text-red-500" />
             </div>
 
             <div>
               <div className="flex items-center justify-between mb-4">
-                <div className="w-12 h-12 rounded-xl bg-violet-500/10 dark:bg-violet-500/20 text-violet-600 dark:text-violet-400 flex items-center justify-center border border-violet-500/20">
+                <div className="w-12 h-12 rounded-xl bg-red-500/10 dark:bg-red-500/20 text-red-600 dark:text-red-400 flex items-center justify-center border border-red-500/20">
                   <Bot className="w-6 h-6" />
                 </div>
-                <span className="px-2.5 py-1 rounded-full text-xs font-semibold bg-violet-500/10 text-violet-600 dark:text-violet-400 border border-violet-500/20">
+                <span className="px-2.5 py-1 rounded-full text-xs font-semibold bg-red-500/10 text-red-600 dark:text-red-400 border border-red-500/20">
                   Autonomous Core
                 </span>
               </div>
 
-              <h3 className="text-xl sm:text-2xl font-bold text-zinc-950 dark:text-white mb-2 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">
+              <h3 className="text-xl sm:text-2xl font-bold text-zinc-950 dark:text-white mb-2 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors">
                 Autonomous Task Orchestration & Sprint Balancing
               </h3>
               <p className="text-sm sm:text-base text-zinc-600 dark:text-zinc-400 max-w-xl mb-6">
@@ -81,18 +81,18 @@ export const Features: React.FC = () => {
           </div>
 
           {/* Card 2: Knowledge Graph */}
-          <div className="group relative p-7 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 hover:border-violet-500/40 dark:hover:border-violet-500/50 shadow-sm hover:shadow-glow-sm transition-all duration-300 flex flex-col justify-between">
+          <div className="group relative p-7 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 hover:border-red-500/40 dark:hover:border-red-500/50 shadow-sm hover:shadow-glow-sm transition-all duration-300 flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-4">
-                <div className="w-12 h-12 rounded-xl bg-indigo-500/10 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400 flex items-center justify-center border border-indigo-500/20">
+                <div className="w-12 h-12 rounded-xl bg-rose-500/10 dark:bg-rose-500/20 text-rose-600 dark:text-rose-400 flex items-center justify-center border border-rose-500/20">
                   <Network className="w-6 h-6" />
                 </div>
-                <span className="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20">
+                <span className="px-2.5 py-1 rounded-full text-xs font-semibold bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/20">
                   Unified Search
                 </span>
               </div>
 
-              <h3 className="text-lg sm:text-xl font-bold text-zinc-950 dark:text-white mb-2 group-hover:text-indigo-500 transition-colors">
+              <h3 className="text-lg sm:text-xl font-bold text-zinc-950 dark:text-white mb-2 group-hover:text-rose-500 transition-colors">
                 Contextual Knowledge Graph
               </h3>
               <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-6">
@@ -112,18 +112,18 @@ export const Features: React.FC = () => {
           </div>
 
           {/* Card 3: Cross-Platform Workflows */}
-          <div className="group relative p-7 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 hover:border-violet-500/40 dark:hover:border-violet-500/50 shadow-sm hover:shadow-glow-sm transition-all duration-300 flex flex-col justify-between">
+          <div className="group relative p-7 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 hover:border-red-500/40 dark:hover:border-red-500/50 shadow-sm hover:shadow-glow-sm transition-all duration-300 flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-4">
-                <div className="w-12 h-12 rounded-xl bg-purple-500/10 dark:bg-purple-500/20 text-purple-600 dark:text-purple-400 flex items-center justify-center border border-purple-500/20">
+                <div className="w-12 h-12 rounded-xl bg-red-700/10 dark:bg-red-700/20 text-red-600 dark:text-red-400 flex items-center justify-center border border-red-700/20">
                   <Workflow className="w-6 h-6" />
                 </div>
-                <span className="px-2.5 py-1 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20">
+                <span className="px-2.5 py-1 rounded-full text-xs font-semibold bg-red-700/10 text-red-600 dark:text-red-400 border border-red-700/20">
                   No-Code / Low-Code
                 </span>
               </div>
 
-              <h3 className="text-lg sm:text-xl font-bold text-zinc-950 dark:text-white mb-2 group-hover:text-purple-500 transition-colors">
+              <h3 className="text-lg sm:text-xl font-bold text-zinc-950 dark:text-white mb-2 group-hover:text-red-500 transition-colors">
                 Cross-Platform Automations
               </h3>
               <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-6">
@@ -133,7 +133,7 @@ export const Features: React.FC = () => {
 
             <div className="flex items-center justify-between p-3 rounded-xl bg-white dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700/60 text-xs font-semibold">
               <span className="flex items-center text-zinc-700 dark:text-zinc-300">
-                <GitBranch className="w-3.5 h-3.5 mr-1.5 text-purple-400" />
+                <GitBranch className="w-3.5 h-3.5 mr-1.5 text-red-400" />
                 50+ Connectors
               </span>
               <span className="text-emerald-500">Zero Maintenance</span>
@@ -141,7 +141,7 @@ export const Features: React.FC = () => {
           </div>
 
           {/* Card 4: Large Bento (Col-span 2 on lg) */}
-          <div className="lg:col-span-2 group relative p-7 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 hover:border-violet-500/40 dark:hover:border-violet-500/50 shadow-sm hover:shadow-glow-sm transition-all duration-300 overflow-hidden flex flex-col justify-between">
+          <div className="lg:col-span-2 group relative p-7 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 hover:border-red-500/40 dark:hover:border-red-500/50 shadow-sm hover:shadow-glow-sm transition-all duration-300 overflow-hidden flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-4">
                 <div className="w-12 h-12 rounded-xl bg-pink-500/10 dark:bg-pink-500/20 text-pink-600 dark:text-pink-400 flex items-center justify-center border border-pink-500/20">
@@ -180,7 +180,7 @@ export const Features: React.FC = () => {
           </div>
 
           {/* Card 5: Meeting Synthesis */}
-          <div className="group relative p-7 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 hover:border-violet-500/40 dark:hover:border-violet-500/50 shadow-sm hover:shadow-glow-sm transition-all duration-300 flex flex-col justify-between">
+          <div className="group relative p-7 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 hover:border-red-500/40 dark:hover:border-red-500/50 shadow-sm hover:shadow-glow-sm transition-all duration-300 flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-4">
                 <div className="w-12 h-12 rounded-xl bg-amber-500/10 dark:bg-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center border border-amber-500/20">
@@ -206,7 +206,7 @@ export const Features: React.FC = () => {
           </div>
 
           {/* Card 6: Enterprise Security */}
-          <div className="group relative p-7 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 hover:border-violet-500/40 dark:hover:border-violet-500/50 shadow-sm hover:shadow-glow-sm transition-all duration-300 flex flex-col justify-between">
+          <div className="group relative p-7 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 hover:border-red-500/40 dark:hover:border-red-500/50 shadow-sm hover:shadow-glow-sm transition-all duration-300 flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-4">
                 <div className="w-12 h-12 rounded-xl bg-emerald-500/10 dark:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center border border-emerald-500/20">

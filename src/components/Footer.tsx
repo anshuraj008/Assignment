@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
           
           <div className="lg:col-span-5 space-y-4">
             <a href="#" className="flex items-center space-x-2.5 group w-fit">
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-violet-600 via-indigo-600 to-brand-400 p-[1px] shadow-glow-sm flex items-center justify-center">
+              <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-red-600 via-rose-600 to-red-400 p-[1px] shadow-glow-sm flex items-center justify-center">
                 <div className="w-full h-full bg-zinc-950 rounded-[11px] flex items-center justify-center">
                   <Sparkles className="w-4 h-4 text-brand-400" />
                 </div>
@@ -68,11 +68,11 @@ export const Footer: React.FC = () => {
                         if (error) setError('');
                       }}
                       placeholder="work.email@company.com"
-                      className="flex-1 px-3.5 py-2 text-xs rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-white placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-violet-500"
+                      className="flex-1 px-3.5 py-2 text-xs rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-white placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-red-500"
                     />
                     <button
                       type="submit"
-                      className="px-4 py-2 text-xs font-bold rounded-xl text-white bg-violet-600 hover:bg-violet-500 transition-colors flex items-center space-x-1"
+                      className="px-4 py-2 text-xs font-bold rounded-xl text-white bg-red-600 hover:bg-red-500 transition-colors flex items-center space-x-1"
                     >
                       <span>Join</span>
                       <ArrowRight className="w-3.5 h-3.5" />
@@ -93,12 +93,12 @@ export const Footer: React.FC = () => {
               Platform
             </h5>
             <ul className="space-y-2.5">
-              <li><a href="#features" className="hover:text-violet-500 transition-colors">Autonomous Triage</a></li>
-              <li><a href="#product" className="hover:text-violet-500 transition-colors">Knowledge Graph</a></li>
-              <li><a href="#product" className="hover:text-violet-500 transition-colors">Cross-Tool Automations</a></li>
-              <li><a href="#features" className="hover:text-violet-500 transition-colors">Predictive Risk Radar</a></li>
-              <li><a href="#how-it-works" className="hover:text-violet-500 transition-colors">50+ Integrations</a></li>
-              <li><a href="#product" className="hover:text-violet-500 transition-colors">Sprint Planner</a></li>
+              <li><a href="#features" className="hover:text-red-500 transition-colors">Autonomous Triage</a></li>
+              <li><a href="#product" className="hover:text-red-500 transition-colors">Knowledge Graph</a></li>
+              <li><a href="#product" className="hover:text-red-500 transition-colors">Cross-Tool Automations</a></li>
+              <li><a href="#features" className="hover:text-red-500 transition-colors">Predictive Risk Radar</a></li>
+              <li><a href="#how-it-works" className="hover:text-red-500 transition-colors">50+ Integrations</a></li>
+              <li><a href="#product" className="hover:text-red-500 transition-colors">Sprint Planner</a></li>
             </ul>
           </div>
 
@@ -107,11 +107,11 @@ export const Footer: React.FC = () => {
               Solutions
             </h5>
             <ul className="space-y-2.5">
-              <li><a href="#solutions" className="hover:text-violet-500 transition-colors">Engineering Leads</a></li>
-              <li><a href="#solutions" className="hover:text-violet-500 transition-colors">Product Managers</a></li>
-              <li><a href="#solutions" className="hover:text-violet-500 transition-colors">Operations Teams</a></li>
-              <li><a href="#solutions" className="hover:text-violet-500 transition-colors">Founders & Executives</a></li>
-              <li><a href="#pricing" className="hover:text-violet-500 transition-colors">Enterprise Security</a></li>
+              <li><a href="#solutions" className="hover:text-red-500 transition-colors">Engineering Leads</a></li>
+              <li><a href="#solutions" className="hover:text-red-500 transition-colors">Product Managers</a></li>
+              <li><a href="#solutions" className="hover:text-red-500 transition-colors">Operations Teams</a></li>
+              <li><a href="#solutions" className="hover:text-red-500 transition-colors">Founders & Executives</a></li>
+              <li><a href="#pricing" className="hover:text-red-500 transition-colors">Enterprise Security</a></li>
             </ul>
           </div>
 
@@ -120,11 +120,11 @@ export const Footer: React.FC = () => {
               Resources
             </h5>
             <ul className="space-y-2.5">
-              <li><a href="#faq" className="hover:text-violet-500 transition-colors">Documentation</a></li>
-              <li><a href="#faq" className="hover:text-violet-500 transition-colors">API Reference</a></li>
-              <li><a href="#faq" className="hover:text-violet-500 transition-colors">Security Whitepaper</a></li>
-              <li><a href="#faq" className="hover:text-violet-500 transition-colors">Customer Stories</a></li>
-              <li><a href="#faq" className="hover:text-violet-500 transition-colors">Changelog (v2.0)</a></li>
+              <li><a href="#faq" className="hover:text-red-500 transition-colors">Documentation</a></li>
+              <li><a href="#faq" className="hover:text-red-500 transition-colors">API Reference</a></li>
+              <li><a href="#faq" className="hover:text-red-500 transition-colors">Security Whitepaper</a></li>
+              <li><a href="#faq" className="hover:text-red-500 transition-colors">Customer Stories</a></li>
+              <li><a href="#faq" className="hover:text-red-500 transition-colors">Changelog (v2.0)</a></li>
             </ul>
           </div>
 
@@ -133,11 +133,11 @@ export const Footer: React.FC = () => {
               Company & Legal
             </h5>
             <ul className="space-y-2.5">
-              <li><a href="#" className="hover:text-violet-500 transition-colors">About Sankar Group</a></li>
-              <li><a href="#" className="hover:text-violet-500 transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-violet-500 transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-violet-500 transition-colors">SOC-2 Type II Report</a></li>
-              <li><a href="#" className="hover:text-violet-500 transition-colors">Cookie Preferences</a></li>
+              <li><a href="#" className="hover:text-red-500 transition-colors">About Sankar Group</a></li>
+              <li><a href="#" className="hover:text-red-500 transition-colors">Privacy Policy</a></li>
+              <li><a href="#" className="hover:text-red-500 transition-colors">Terms of Service</a></li>
+              <li><a href="#" className="hover:text-red-500 transition-colors">SOC-2 Type II Report</a></li>
+              <li><a href="#" className="hover:text-red-500 transition-colors">Cookie Preferences</a></li>
             </ul>
           </div>
         </div>
